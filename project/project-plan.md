@@ -1,6 +1,6 @@
 # Project Plan
 ## Title
-Relationship between Air quality index and weather.
+Correlation between Air quality index and weather.
 
 ## Main Question
 Is the Air Quality Index for Delhi, India affected by weather conditions?
