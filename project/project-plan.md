@@ -6,7 +6,7 @@ Correlation between Air quality index and weather.
 Is the Air Quality Index for Delhi, India affected by weather conditions?
 
 ## Description
-The aim of this project is to analyze the Air quality in relation to changes in weather. The results may give insights about how change is weather affect air quality for Delhi.
+The onset of winter brings along the problem of air pollution every year for the city of Delhi. The aim of this project is to analyze the Air quality in relation to changes in weather. The results may give insights about how change in weather conditions affect air quality for Delhi, which can be used to draft policies to control other factors like factory emissions and fossil fuel usage according to weather changes.
 
 ## Data Sources
 ### Data Source 1: Kaggle
@@ -18,3 +18,8 @@ The aim of this project is to analyze the Air quality in relation to changes in 
 * type : CSV
 
 ## Work Packages
+1. Data Extraction and Preprocessing
+2. Exploratory data Analysis
+3. Plot graphs to observe trends
+4. Calculate correlation between AQI and weather conditions(Temperature, humidity, rainfall, etc.)
+5. Conclusion.
