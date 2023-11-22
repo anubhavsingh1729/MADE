@@ -1,25 +1,25 @@
 # Project Plan
 ## Title
-Correlation between Air quality index and weather.
+Correlation between R&D Investment and Human development report.
 
 ## Main Question
-Is the Air Quality Index for Delhi, India affected by weather conditions?
+Does the government spending on research and development affects the trends in Human Development Index?
 
 ## Description
-The onset of winter brings along the problem of air pollution every year for the city of Delhi. The aim of this project is to analyze the Air quality in relation to changes in weather. The results may give insights about how change in weather conditions affect air quality, which can be used to draft policies to control other factors like factory emissions and fossil fuel usage according to weather changes.
+The aim of this project is to analyse how government spending on research and development activity affects the trend in human development index. The Human Development Index (HDI) is a summary measure of average achievement in key dimensions of human development: a long and healthy life, being knowledgeable and having a decent standard of living. 
 
 ## Data Sources
-### Data Source 1: Kaggle
-* Data Url : <https://www.kaggle.com/datasets/syedjaferk/delhi-weather-dataset/data>
-* type : CSV
+### Data Source 1: hdr.undp.org
+* Data Url : <https://hdr.undp.org/sites/default/files/2021-22_HDR/HDR21-22_Statistical_Annex_HDI_Trends_Table.xlsx>
+* type : excel
 
-### Data Source 2: Kaggle
-* Data Url : <https://www.kaggle.com/datasets/deepaksirohiwal/delhi-air-quality>
-* type : CSV
+### Data Source 2: worldbank.org
+* Data Url : <https://api.worldbank.org/v2/en/indicator/GB.XPD.RSDV.GD.ZS?downloadformat=excel>
+* type : excel
 
 ## Work Packages
 1. Data Extraction and Preprocessing
 2. Exploratory data Analysis
 3. Plot graphs to observe trends
-4. Calculate correlation between AQI and weather conditions(Temperature, humidity, rainfall, etc.)
+4. Analyse the change in HDI corresponding to R&D investements over a defined period of years.
 5. Conclusion.
