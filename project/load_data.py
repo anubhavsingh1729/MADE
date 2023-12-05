@@ -8,8 +8,11 @@ def get_request(url,output):
     if response.status_code == 200:
         with open(output,'wb') as file:
             file.write(response.content)
+        return True
     else:
-        print("error")
+        print(response.status_code)
+        return False
+
 
 url = 'https://api.worldbank.org/v2/en/indicator/GB.XPD.RSDV.GD.ZS?downloadformat=excel'
 url2 = 'https://hdr.undp.org/sites/default/files/2021-22_HDR/HDR21-22_Statistical_Annex_HDI_Trends_Table.xlsx'
@@ -17,11 +20,13 @@ url2 = 'https://hdr.undp.org/sites/default/files/2021-22_HDR/HDR21-22_Statistica
 output = '../data/world_bank.xlsx'
 output2 = '../data/HDR.xlsx'
 
-def worlbank_Data(file):
+DATABASE_PATH = '../data/DatasetDB.db'
+
+def worldbank_Data(file):
     dt = pd.read_excel(file,header = 3)
     dt.dropna(axis=1,how='all')
     dt.fillna(0,inplace=True)
-    conn = sqlite3.connect('../data/DatasetDB.db')
+    conn = sqlite3.connect(DATABASE_PATH)
     dt.to_sql('worldbank', conn, index=False, if_exists='replace')
     conn.close()
 
@@ -30,11 +35,11 @@ def HDR(file):
     dt.dropna(axis=1,how='all',inplace=True)
     dt=dt[~dt['HDI rank'].isna()]
     dt.drop('Unnamed: 3',axis=1,inplace=True)
-    conn = sqlite3.connect('../data/DatasetDB.db')
+    conn = sqlite3.connect(DATABASE_PATH)
     dt.to_sql('HDR', conn, index=False, if_exists='replace')
     conn.close()
 
 get_request(url,output)
 get_request(url2,output2)
-worlbank_Data(output)
+worldbank_Data(output)
 HDR(output2)
