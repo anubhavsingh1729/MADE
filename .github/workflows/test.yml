@@ -2,8 +2,9 @@ name: Run Tests
 
 on:
   push:
-    branches:
-      - main
+    paths:
+      - project/**
+      - data/**
 
 jobs:
   test:
@@ -20,5 +21,5 @@ jobs:
 
     - name: Run tests
       run: |
-        chmod +x ./project/test.sh
-        ./project/test.sh
+        chmod +x test.sh
+        test.sh
