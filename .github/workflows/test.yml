@@ -18,7 +18,7 @@ jobs:
       with:
         node-version: '14'
 
-    - name: Run tests
+    - name: Run project/tests
       run: |
         chmod +x test.sh
         ./test.sh
