@@ -27,4 +27,4 @@ jobs:
               run: |
                cd project
                chmod +x test.sh
-               test.sh
+               ./test.sh
