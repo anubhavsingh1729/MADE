@@ -1,6 +1,6 @@
 # Project Plan
 ## Title
-Correlation between R&D Investment and Human development report.
+Correlation between R&D Investment and Human development Index.
 
 ## Main Question
 Does the government spending on research and development affects the trends in Human Development Index?

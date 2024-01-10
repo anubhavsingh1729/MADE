@@ -2,3 +2,5 @@ pandas
 requests
 xlrd
 openpyxl
+seaborn
+geopandas
