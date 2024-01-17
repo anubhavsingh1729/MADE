@@ -22,3 +22,7 @@ The aim of this project is to analyze how government spending on research and de
 3. Plot graphs to observe trends
 4. Analyse the change in HDI corresponding to R&D investements over a defined period of years.
 5. Conclusion.
+
+## Final Report
+
+[Link](https://github.com/anubhavsingh1729/MADE/blob/main/project/report.ipynb)
