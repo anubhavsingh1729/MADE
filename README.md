@@ -5,7 +5,8 @@ Correlation between R&D Investment and Human development Index.
 Does the government spending on research and development affects the trends in Human Development Index?
 
 ## Description
-The aim of this project is to analyze how government spending on research and development activity affects the trend in human development index. The Human Development Index (HDI) is a summary measure of average achievement in key dimensions of human development: a long and healthy life, being knowledgeable and having a decent standard of living. 
+The aim of this project is to analyze how government spending on research and development activity affects the trend in human development index. The Human Development Index (HDI) is a summary measure of average achievement in key dimensions of human development: a long and healthy life, being knowledgeable and having a decent standard of living.
+By comprehensively examining the patterns, trends and correlations, it could be possible to verify this potential relationship. This analysis could provide key insights to further help with evidence based decision making process.
 
 ## Data Sources
 ### Data Source 1: hdr.undp.org
@@ -16,13 +17,27 @@ The aim of this project is to analyze how government spending on research and de
 * Data Url : <https://api.worldbank.org/v2/en/indicator/GB.XPD.RSDV.GD.ZS?downloadformat=excel>
 * type : excel
 
-## Work Packages
-1. Data Extraction and Preprocessing
-2. Exploratory data Analysis
-3. Plot graphs to observe trends
-4. Analyse the change in HDI corresponding to R&D investements over a defined period of years.
-5. Conclusion.
+## Project Setup
+1. Clone the repository:
+
+```
+git clone git@github.com:anubhavsingh1729/MADE.git
+```
+
+2. Install requirements:
+
+```
+pip install -r requirements.txt
+```
+
+3. Run the ETL pipeline
+Go to /project and run the pipeline.sh script.
+
+```
+chmod +x pipeline.sh
+sh pipeline.sh
+```
 
 ## Final Report
 
-[Link](https://github.com/anubhavsingh1729/MADE/blob/main/project/report.ipynb)
+[report.ipynb](https://github.com/anubhavsingh1729/MADE/blob/main/project/report.ipynb)
